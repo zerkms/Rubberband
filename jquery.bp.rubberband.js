@@ -74,6 +74,7 @@ if (jQuery) (function($) {
 							 .removeClass('bp-min-' + lastPoint.min);
 				}
 				
+				console.log('events triggered');
 				// Fire events!
 				if (typeof lastPoint.max != "undefined") {
 					$(window).trigger('rubberband.exit', [ lastPoint.max ]);
